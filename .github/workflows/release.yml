@@ -19,13 +19,6 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
-      - name: cache-maven-repo
-        uses: actions/cache@v4
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-maven-
-
       - name: Configure git user
         run: |
           git config user.email "actions@github.com"
@@ -34,6 +27,6 @@ jobs:
         run: printenv
           
       - name: Release
-        run: mvn -B release:prepare release:perform
+        run: mvn -B release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
