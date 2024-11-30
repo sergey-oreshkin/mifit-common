@@ -28,8 +28,8 @@ jobs:
 
       - name: Configure git user
         run: |
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
+          git config user.email "joknife79@ya.ru"
+          git config user.name "sergey-oreshkin"
           
       - name: Release
         run: mvn -B release:prepare release:perform
