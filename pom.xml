@@ -5,7 +5,7 @@
     <scm>
         <developerConnection>scm:git:https://github.com/sergey-oreshkin/mifit-common.git
         </developerConnection>
-        <tag>myfit-security-starter-0.4</tag>
+        <tag>myfit-security-starter-0.9</tag>
     </scm>
 
     <parent>
@@ -16,7 +16,7 @@
 
     <groupId>center.myfit</groupId>
     <artifactId>myfit-security-starter</artifactId>
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9</version>
     <packaging>jar</packaging>
 
     <dependencies>
